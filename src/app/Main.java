@@ -17,17 +17,19 @@ public class Main {
         day = 5;
         total = day * salesDay;
 
-        System.out.printf("Product No 1: %s,%ntotal sales for 5 days is %s, %.2f, %n sales by day is %s, %.2f. ",
+        System.out.printf("Product No 1: %s,%ntotal sales for 5 days is %s, %.2f, %nsales by day is %s, %.2f. ",
                 productName, CURRENCY_EUR, total, CURRENCY_EUR, salesDay);
 
 
+        productName = "laptop";
+        productNumber = 2;
+        salesDay = 1498.12;
+        day = 7;
+        total = day * salesDay;
 
-
-
-
+        System.out.printf("%nProduct No 2: %s,%ntotal sales for 7 days is %s, %.2f, %nsales by day is %s, %.2f. ",
+                productName, CURRENCY_EUR, total, CURRENCY_EUR, salesDay);
 
     }
-
-
 
 }
