@@ -3,32 +3,33 @@ package app;
 public class Main {
 
     private static final String CURRENCY_EUR = "EUR";
+    private static final int SMARTPHONE_DAYS = 5;
+    private static final int LAPTOP_DAYS = 7;
 
     static String productName;
     static int productNumber;
-    static int day;
-    static double salesDay;
-    static double total;
+    static double dailySales;
+    static double totalSales;
 
     public static void main(String[] args) {
         productName = "smartphone";
         productNumber = 1;
-        salesDay = 2430.68;
-        day = 5;
-        total = day * salesDay;
+        dailySales = 2430.68;
+        totalSales = SMARTPHONE_DAYS * dailySales;
 
-        System.out.printf("Product No 1: %s,%ntotal sales for 5 days is %s, %.2f, %nsales by day is %s, %.2f. ",
-                productName, CURRENCY_EUR, total, CURRENCY_EUR, salesDay);
+        System.out.printf("Product No %d: %s,%ntotal sales for %d days is %s, %.2f, %nsales by day is %s, %.2f. ",
+                productNumber, productName, SMARTPHONE_DAYS, CURRENCY_EUR, totalSales, CURRENCY_EUR, dailySales);
 
 
         productName = "laptop";
         productNumber = 2;
-        salesDay = 1498.12;
-        day = 7;
-        total = day * salesDay;
+        dailySales = 1498.12;
+        totalSales = LAPTOP_DAYS * dailySales;
 
-        System.out.printf("%nProduct No 2: %s,%ntotal sales for 7 days is %s, %.2f, %nsales by day is %s, %.2f. ",
-                productName, CURRENCY_EUR, total, CURRENCY_EUR, salesDay);
+        System.out.printf("%nProduct No %d: %s,%ntotal sales for %d days is %s, %.2f, %nsales by day is %s, %.2f. ",
+                productNumber, productName, LAPTOP_DAYS, CURRENCY_EUR, totalSales, CURRENCY_EUR, dailySales);
+
+
 
     }
 
